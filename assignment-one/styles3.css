@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header Section */
+.hero {
+  text-align: center;
+  background-color: palevioletred;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.start-btn {
+  padding: 10px 20px;
+  background: #fff;
+  color: palevioletred;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-btn:hover {
+  background: palevioletred;
+  color: #fff;
+}
+
+/* How-to-Play Section */
+.how-to-play {
+  background: #fff;
+  padding: 30px 20px;
+}
+
+.how-to-play h2 {
+  text-align: center;
+  color: palevioletred;
+}
+
+.how-to-play ol {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0;
+  list-style-type: decimal;
+}
+
+.how-to-play li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+/* Video Section */
+.video-section {
+  text-align: center;
+  background: #f5f5f5;
+  padding: 30px 20px;
+}
+
+.video-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Features Section */
+.features {
+  background: #fff;
+  padding: 30px 20px;
+}
+
+.features h2 {
+  text-align: center;
+  color: palevioletred;
+}
+
+.features ul {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0;
+  list-style-type: disc;
+}
+
+.features li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+/* Tools Section */
+.tools {
+  background: #f5f5f5;
+  padding: 30px 20px;
+}
+
+.tools h2 {
+  text-align: center;
+  color: palevioletred;
+}
+
+.tools ul {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0;
+  list-style-type: circle;
+}
+
+.tools li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+/* Back to Main Button */
+.back-to-main {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  color: white;
+  background-color: palevioletred;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-main:hover {
+  background-color: #d36e8c;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: palevioletred;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9em;
+}

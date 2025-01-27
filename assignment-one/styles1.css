@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  color: palevioletred;
+}
+
+header {
+  background-color: palevioletred;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.main-content {
+  margin-left: 450px;
+  margin-right: 450px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.intro, .how-to-play, .special-features {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ol, ul {
+  margin-left: 20px;
+}
+
+.back-to-main {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 15px;
+  color: white;
+  background-color: palevioletred;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.back-to-main:hover {
+  background-color: palevioletred;
+}
+
+.video-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer {
+  background-color: palevioletred;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.back-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
