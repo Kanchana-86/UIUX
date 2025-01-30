@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    line-height: 1.6;
+    background-color: #000; /* Default background color for smoother transitions */
+    overflow-x: hidden;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, black, black);
+    color: white;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section Styles */
+  section {
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #chapter1 {
+    background-image: url('https://lh4.googleusercontent.com/proxy/1pt_vI1mgkosoL3C5l2Dn9KHYdUUq2CMAQWevwF9NfmPSO8Ew9GHwghFqMND2vK4-MN_LXMn-nbGvlqwcsO-VA');
+  }
+  
+  #chapter2 {
+    background-image: url('https://sinay.ai/wp-content/uploads/2024/05/fishing-industry-1024x512.jpg');
+  }
+  
+  #chapter3 {
+    background-image: url('https://i.pinimg.com/originals/81/51/46/8151468c996f30711c873bb4665346aa.jpg');
+  }
+  
+  .content {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better text readability */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 15px 0 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: black;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
