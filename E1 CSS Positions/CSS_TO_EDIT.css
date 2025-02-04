@@ -1,0 +1,193 @@
+/* BODY AND SECTIONS */
+/* ----------------------------------------------------- */
+/* All body and section styling available here (except for the fonts, which are declared in the defaults+fonts.css). Some properties have already been declared */
+
+body {
+    padding: 40px 10%;
+    background-color: rgb(235, 235, 235) ;  
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+section > h2 {
+    text-align: center;
+    line-height: 1;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
+
+section > em {
+    display: block;
+    margin: 8px 0;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+section > div {
+    margin: 10px;
+}
+
+#s1 > div {background-color: #FFFF00;}
+#s2 > div {background-color: #CDEAC0;}
+#s3 > div {background-color: #FFFAE3;}
+#s4 > div {background-color: #FF5964;}
+#s5 > div {background-color: #B8F3FF;}
+#s6 > div {background-color: #B298DC;}
+#s7 > div {background-color: #BDC696;}
+
+
+
+/* SECTION 1 */
+/* ----------------------------------------------------- */
+#s1 span {
+    background-color:yellow ;
+    mix-blend-mode: difference;
+    margin-bottom: 2px;
+    height: 30px;
+}
+#s1 div:nth-child(2) span {
+    display: inline;
+}
+#s1 div:nth-child(3) span {
+    display: inline-block
+}
+#s1 div:nth-child(4) span, 
+#s1 div:nth-child(5) span {
+    display: block;
+}
+#s1 div:nth-child(5) span {
+    height: auto;
+    text-align: center;
+}
+/* SECTION 2 */
+/* ----------------------------------------------------- */
+#s2 div {
+    display: inline-block;
+}
+#s2 div:nth-child(3) {
+    width: 600px;
+}
+#s2 div:nth-child(4) {
+    width: 600px;
+    display: block;
+    margin:auto;
+}
+#s2 div:nth-child(5) {
+    width: 100%;
+}
+#s2 div:nth-child(6) {
+    width: 100vw;
+}
+#s2 div:nth-child(7),
+#s2 div:nth-child(8),
+#s2 div:nth-child(9),
+#s2 div:nth-child(10) {
+    width: 47%;
+}
+#s2 span{
+    background-color: yellow;
+    mix-blend-mode: difference;
+    display: block;
+}
+#s2 div:nth-child(7) span {
+    width: 50%;
+}
+#s2 div:nth-child(8) span,
+#s2 div:nth-child(9) span,
+#s2 div:nth-child(10) span{
+    width: 50vw;
+}
+#s2 div:nth-child(9) {
+    overflow: hidden;
+}
+#s2 div:nth-child(10) {
+    overflow: auto;
+}
+body {
+    overflow-x: hidden;
+}
+/* SECTION 3 */
+/* ----------------------------------------------------- */
+#s3 {
+font-size: 24px;
+}
+#s3 div:nth-child(2) {
+    font-size: 15px;
+}
+#s3 div:nth-child(3) {
+    font-size: 1.5vw;
+}
+#s3 div:nth-child(4) {
+    font-size: 1em;
+}
+#s3 div:nth-child(5) {
+    font-size: 1rem;
+}
+/* SECTION 4 */
+/* ----------------------------------------------------- */
+#s4 div {
+    width: 50%;
+    margin: auto;
+}
+#s4 div:nth-child(2) {
+    margin-right: 0;
+}
+#s4 h3 {
+    position: sticky;
+    top: 1rem;
+}
+#s4 div:nth-child(2) h3 {
+    top: 0;
+    background-color: lightgray;
+}
+/* SECTION 5 */
+/* ----------------------------------------------------- */
+#s5 div {
+    width: 22%;
+    position: static;
+}
+#s5 div:nth-child(2) {
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    mix-blend-mode: multiply;
+}
+#s5 div:nth-child(3) {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+/* SECTION 6 */
+/* ----------------------------------------------------- */
+section {
+    position: relative;
+}
+div {
+    width: 50%;
+}
+div:nth-child(2) {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 20%;
+}
+#div:nth-child(3) {
+    position: absolute;
+    left: -40px;
+    mix-blend-mode: difference;
+}
+/* SECTION 7 */
+/* ----------------------------------------------------- */
+div:nth-child(2) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
