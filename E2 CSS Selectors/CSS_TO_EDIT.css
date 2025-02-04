@@ -1,0 +1,159 @@
+/* BODY AND SECTIONS */
+/* ----------------------------------------------------- */
+
+/* All body and section styling available here (except for the fonts, which are declared in the defaults+fonts.css). One property has already been declared on the body and section element, respectively */
+
+
+/* SOME CSS PROPERTIES YOU COULD USE:
+{
+    margin: 20px;
+    margin: 20%;
+
+    margin-left: ;
+    margin-right: ;
+
+    padding-left: 20px;
+    padding-right: 20%;
+    padding: 0 50px;
+    padding: 10px 30px 50px 70px;
+
+    border-width: ;
+    border-style: ;
+    border-color: ;
+    border: ;
+
+    font-size: ;
+    line-height: ;
+    letter-spacing: ;
+    
+    text-align: ;
+    text-transform: lowercase;
+    text-indent: 20px;
+    columns: 2;
+    column-gap:;
+
+    text-decoration:;
+    text-decoration-line: ;
+    text-decoration-thickness: ;
+    text-underline-offset: ;}
+    
+    list-style: ;
+    content: ;
+}
+
+*/
+
+body {
+    padding: 40px 10%;
+}
+
+/*section1*/
+section {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+section:hover {
+    background-color:white;
+}
+
+/*section2*/
+section {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+section:hover {
+    background-color:white;
+}
+
+/*section3*/
+section {
+    background-color:white;
+    margin-top: 50px;
+    padding-bottom:30px;
+}
+
+/*section4*/
+section {
+    margin-top: 100px;
+    border: 1px solid black;
+    padding: 20px;
+    padding-left: 40px;
+}
+ul:first-of-type li:nth-child(2) {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+ul:first-of-type li:hover {
+    text-decoration: line-through;
+}
+ul:nth-of-type(2) {
+    list-style-type: none;
+    margin-top: -20px;
+}
+ul:nth-of-type(2) li::before {
+    content: "\261E";
+    margin-right: 10px;
+}
+ul:nth-of-type(2) li:nth-child(even) {
+    background-color: white
+}
+
+/*Div 1*/
+div:first-of-type {
+    border: 1px solid black;
+    outline: 25px solid yellow;
+    padding-left: 40px;
+}
+section > div {
+    border: 1px solid black;
+    outline: 25px solid yellow;
+    padding-left: 40px;
+}
+section {
+    border: 25px solid yellow;
+}
+ol {
+    list-style-type: upper-roman;
+}
+ol li {
+    margin-bottom: 20px;
+}
+
+/*section5*/
+section p:first-of-type {
+    margin-bottom: 40px;
+}
+section > div p:first-of-type {
+    all: unset;
+}
+section > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+}
+section > div p {
+    margin: 0;
+}
+section > div p:nth-of-type(n+2) {
+    text-indent: 60px;
+}
+
+/*section6*/
+section p:nth-of-type(2) {
+    font-size: 44px;
+    line-height: 0.8;
+}
+blockquote, q {
+    color: #999;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid #ccc;
+}
+blockquote {
+    margin-left: 30px;
+}
+q {
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+}
