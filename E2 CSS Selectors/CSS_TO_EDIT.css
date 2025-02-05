@@ -46,6 +46,31 @@
 body {
     padding: 40px 10%;
 }
+/* General Styling */
+h1 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+div, section {
+    margin: 50px 0;
+    padding-top: 20px;
+    border-top: 1px solid black;
+}
+div p:first-child, section p:first-child {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+::selection {
+    background: #ffcc00;
+    color: black;
+}
+::-moz-selection {
+    background: #ffcc00;
+    color: black;
+}
 
 /*section1*/
 section {
