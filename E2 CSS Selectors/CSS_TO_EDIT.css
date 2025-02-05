@@ -46,6 +46,7 @@
 body {
     padding: 40px 10%;
 }
+
 /* General Styling */
 h1 {
     font-size: 60px;
@@ -72,37 +73,38 @@ div p:first-child, section p:first-child {
     color: black;
 }
 
-/*section1*/
-section {
+/* Section 1 */
+section:nth-of-type(1) {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+section:nth-of-type(1):hover {
+    background-color: white;
+}
+
+/* Section 2 */
+section:nth-of-type(2) {
     margin-left: 40px;
     margin-right: 40px;
 }
-section:hover {
-    background-color:white;
+section:nth-of-type(2):hover {
+    background-color: white;
 }
 
-/*section2*/
-section {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-section:hover {
-    background-color:white;
-}
-
-/*section3*/
-section {
-    background-color:white;
+/* Section 3 */
+section:nth-of-type(3) {
+    background-color: white;
     margin-top: 50px;
-    padding-bottom:30px;
+    padding-bottom: 30px;
 }
 
-/*section4*/
-section {
+/* Section 4 */
+section:nth-of-type(4) {
     margin-top: 100px;
     border: 1px solid black;
     padding: 20px;
     padding-left: 40px;
+    border: 25px solid yellow;
 }
 ul:first-of-type li:nth-child(2) {
     text-decoration: underline;
@@ -121,23 +123,23 @@ ul:nth-of-type(2) li::before {
     margin-right: 10px;
 }
 ul:nth-of-type(2) li:nth-child(even) {
-    background-color: white
+    background-color: white;
 }
 
-/*Div 1*/
+/* Div 1 */
 div:first-of-type {
     border: 1px solid black;
     outline: 25px solid yellow;
     padding-left: 40px;
 }
-section > div {
+
+
+section > div:first-of-type {
     border: 1px solid black;
     outline: 25px solid yellow;
     padding-left: 40px;
 }
-section {
-    border: 25px solid yellow;
-}
+
 ol {
     list-style-type: upper-roman;
 }
@@ -145,27 +147,27 @@ ol li {
     margin-bottom: 20px;
 }
 
-/*section5*/
-section p:first-of-type {
+/* Section 5 */
+section:nth-of-type(5) p:first-of-type {
     margin-bottom: 40px;
 }
-section > div p:first-of-type {
+section:nth-of-type(5) > div p:first-of-type {
     all: unset;
 }
-section > div {
+section:nth-of-type(5) > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
 }
-section > div p {
+section:nth-of-type(5) > div p {
     margin: 0;
 }
-section > div p:nth-of-type(n+2) {
+section:nth-of-type(5) > div p:nth-of-type(n+2) {
     text-indent: 60px;
 }
 
-/*section6*/
-section p:nth-of-type(2) {
+/* Section 6 */
+section:nth-of-type(6) p:nth-of-type(2) {
     font-size: 44px;
     line-height: 0.8;
 }
@@ -182,3 +184,4 @@ q {
     border-right: 1px solid #ccc;
     margin-right: 10px;
 }
+
