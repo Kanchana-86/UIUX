@@ -58,7 +58,7 @@ hr {
 .btn3 { background-color: #6bff97; }
 .btn4 { background-color: #ffb86b; }
 .btn5 { background-color: #a56bff; }
-.btn6 { background-color: gray; }
+.btn6 { background-color: #808080; }
 
 .btn:hover {
     opacity: 0.8;
