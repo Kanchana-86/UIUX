@@ -1,34 +1,12 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
-button {
-    margin: 10px;
-    padding: 10px;
-    background-color: lightblue;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+.hidden {
+    display: none;
 }
 
 div {
-    width: 200px;
-    height: 100px;
-    margin: 10px;
     text-align: center;
-    line-height: 100px;
-    background-color: lightblue;
-    transition: all 0.3s ease-in-out;
-}
-
-#div1 {
-    display: none; /* Hidden by default */
-}
-
-.hidden {
-    display: none !important;
-}
-
-#div2 {
-    display: block; /* Open by default */
+    padding: 200px;
+    margin: 10px 0;
+    width: 1000px;
+    background-color: rgb(23, 122, 168);
+    border: 1px solid rgb(158, 59, 142);
 }
