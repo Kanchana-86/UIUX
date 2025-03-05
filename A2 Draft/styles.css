@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.scene {
+    display: none;
+    margin: auto;
+    max-width: 1250px;
+    padding: 70px;
+    background: #222;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.scene.active {
+    display: block;
+    opacity: 1;
+}
+
+#scene1 {
+    background-image: utl('A2 UIUX/Pictures/1.webp');
+}
+#scene2 {
+    background-image: utl('A2 UIUX/Pictures/2.webp');
+}
+#scene3 {
+    background-image: utl('A2 UIUX/Pictures/3.webp');
+}
+#scene4 {
+    background-image: utl('A2 UIUX/Pictures/4.webp');
+}
+#scene5 {
+    background-image: utl('A2 UIUX/Pictures/5.webp');
+}
+#scene6 {
+    background-image: utl('A2 UIUX/Pictures/6.webp');
+}
+
+.alex {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.scene-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+    margin: 10px;
+    padding: 15px;
+    background: #007BFF;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
