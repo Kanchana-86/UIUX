@@ -60,6 +60,7 @@ hr {
 .btn5 { background-color: #a56bff; }
 .btn6 { background-color: #808080; }
 .btn7 { background-color: #f08080; }
+.btn8 { background-color: #00ffff; }
 
 .btn:hover {
     opacity: 0.8;
