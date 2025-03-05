@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Privacy Quest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="scene1" class="scene active">
+        <img src="./Pictures/1.webp" class="scene-image" alt="Scene 1 Image">
+        <h2>Hey, I’m Alex...</h2>
+        <p>I just got a mysterious tip. Apparently, OmniData is stealing personal information. There's a link...</p>
+        <button onclick="nextScene(2)">🔍 Investigate the Link</button>
+        <button onclick="nextScene(5, 'report')">🚨 Report to Authorities</button>
+    </div>
+
+    <div id="scene2" class="scene">
+        <img src="./Pictures/2.webp" class="scene-image" alt="Data Visualization">
+        <h2>Whoa! Look at this data...</h2>
+        <p>It even has my location, shopping habits, and private messages!</p>
+        <button onclick="nextScene(3)">🔍 Keep Digging</button>
+    </div>
+
+    <div id="scene3" class="scene">
+        <img src="./Pictures/3.webp" class="scene-image" alt="AI Surveillance">
+        <h2>They're tracking everyone!</h2>
+        <p>AI cameras are labeling people in real time. Click on a person to see their profile.</p>
+        <button onclick="nextScene(4)">📸 Meet the Whistleblower</button>
+    </div>
+
+    <div id="scene4" class="scene">
+        <img src="./Pictures/4.webp" class="scene-image" alt="Whistleblower">
+        <h2>A whistleblower reached out...</h2>
+        <p>They have proof that OmniData works with the government. What should I do?</p>
+        <button onclick="nextScene(4)">📁 Leak the Files</button>
+        <button onclick="nextScene(6, 'legal')">📞 Contact Legal Experts</button>
+        <button onclick="nextScene(5, 'negotiate')">💀 Negotiate with OmniData</button>
+    </div>
+
+    <div id="scene5" class="scene">
+        <img src="./Pictures/5.webp" class="scene-image" alt="Contact">
+        <h2>The Consequences</h2>
+        <p id="outcome"></p>
+        <button onclick="nextScene(6, 'contact')">📞 Contact</button>
+    </div>
+
+    <div id="scene6" class="scene">
+        <img src="./Pictures/5.webp" class="scene-image" alt="contactOutcome">
+        <h2>Contact</h2>
+        <p id="contactOutcome"></p>
+        <button onclick="nextScene(7, 'government')">🏛️ Government</button>
+        <button onclick="nextScene(7, 'private')">🏢 Private</button>
+    </div>
+
+    <div id="scene7" class="scene">
+        <img src="./Pictures/6.webp" class="scene-image" alt="Final">
+        <h2>Final Decision</h2>
+        <p>What’s your final action?</p>
+        <button onclick="location.reload()">🔚 Reset</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
