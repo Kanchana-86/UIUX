@@ -61,12 +61,73 @@ section {
   color: white;
 }
 
-section:nth-child(odd) { 
-  background: #ddd; 
+/* Section 1 */
+#section1 {
+  background-color: #f4a261; /* Orange */
 }
 
-section:nth-child(even) { 
-  background: #bbb; 
+/* Section 2 */
+#section2 {
+  background-color: #2a9d8f; /* Teal */
+}
+
+/* Section 3 */
+#section3 {
+  background-color: #e76f51; /* Red-Orange */
+}
+
+/* Section 4 */
+#section4 {
+  background-color: #264653; /* Dark Blue */
+}
+
+/* Section 5 */
+#section5 {
+  background-color: #bcbcbc; /* Grey */
+}
+
+/* Section 6 */
+#section6 {
+  background-color: #8ecae6; /* Light Blue */
+}
+
+/* Section 7 */
+#section7 {
+  background-color: #ffb703; /* Yellow */
+}
+
+/* Section 8 */
+#section8 {
+  background-color: #219ebc; /* Blue */
+}
+
+
+#section1 .box {
+  background-color: red;
+}
+
+#section2 .box {
+  background-color: orange;
+}
+
+#section3 .box {
+  background-color: yellow;
+}
+
+#section4 .box {
+  background-color: green;
+}
+
+#section6 .box {
+  background-color: purple;
+}
+
+#section7 .box {
+  background-color: green;
+}
+
+#section8 .box {
+  background-color: navy;
 }
 
 .trigger-line {
