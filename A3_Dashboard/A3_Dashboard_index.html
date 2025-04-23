@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Life Dashboard</h1>
+        
+        <div class="dashboard-content">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-icon">😊</span>
+                        <h3>Happiness</h3>
+                    </div>
+                    <input type="range" min="0" max="100" value="75" class="metric-slider" data-metric="happiness">
+                    <div class="metric-value">75%</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%; background-color: #10B981;"></div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-icon">⚡</span>
+                        <h3>Energy</h3>
+                    </div>
+                    <input type="range" min="0" max="100" value="65" class="metric-slider" data-metric="energy">
+                    <div class="metric-value">65%</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%; background-color: #F59E0B;"></div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-icon">🏃</span>
+                        <h3>Physical</h3>
+                    </div>
+                    <input type="range" min="0" max="100" value="80" class="metric-slider" data-metric="physical">
+                    <div class="metric-value">80%</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%; background-color: #3B82F6;"></div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-icon">🧠</span>
+                        <h3>Mental</h3>
+                    </div>
+                    <input type="range" min="0" max="100" value="70" class="metric-slider" data-metric="mental">
+                    <div class="metric-value">70%</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%; background-color: #8B5CF6;"></div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-icon">❤️</span>
+                        <h3>Emotional</h3>
+                    </div>
+                    <input type="range" min="0" max="100" value="85" class="metric-slider" data-metric="emotional">
+                    <div class="metric-value">85%</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%; background-color: #EC4899;"></div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-icon">☀️</span>
+                        <h3>Wellness</h3>
+                    </div>
+                    <input type="range" min="0" max="100" value="90" class="metric-slider" data-metric="wellness">
+                    <div class="metric-value">90%</div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%; background-color: #F97316;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>Weekly Trends</h2>
+                <canvas id="trendsChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
