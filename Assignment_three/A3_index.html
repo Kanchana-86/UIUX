@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Screen 1: Welcome Interface -->
+    <section id="screen1" class="screen active">
+        <div class="container">
+            <div class="logo-animation">
+                <div class="logo-circle"></div>
+                <div class="logo-inner"></div>
+            </div>
+            <h1 class="headline">🔢 LIFE SCORE</h1>
+            <p class="greeting">The Life Score Dashboard monitors and quantifies your digital and real-world behaviors, assigning you a numerical value that determines your access to services and opportunities.
+                Track your score, understand evaluation factors, and receive guidance on improving your standing. Your value to society is now measurable. 
+                Welcome to the System. Please proceed when ready.</p>
+            <button id="startButton" class="btn-primary">▶️ Start</button>
+        </div>
+    </section>
+
+  <!-- Screen 2: Personality Calibration -->
+<section id="screen2" class="screen">
+    <div class="container">
+        <h2>Personality Calibration</h2>
+        <p>Please select the option that best describes you:</p>
+        <div class="choice-container">
+            <div class="choice">
+                <input type="radio" id="choice1" name="personality" value="compliant">
+                <label for="choice1">I prefer structure and following established guidelines.</label>
+            </div>
+            <div class="choice">
+                <input type="radio" id="choice2" name="personality" value="noncompliant">
+                <label for="choice2">I prefer to challenge systems and explore alternatives.</label>
+            </div>
+            <div class="choice">
+                <input type="radio" id="choice3" name="personality" value="neutral">
+                <label for="choice3">I adapt to each situation differently.</label>
+            </div>
+        </div>
+        <button id="continueButton" class="btn-primary" disabled>Continue</button>
+    </div>
+</section>
+
+    <!-- Screen 3A: Compliant Interface -->
+    <section id="screen3A" class="screen">
+        <div class="container">
+            <h2>System Configuration</h2>
+            <p>Thank you for your cooperation. Please adjust your preferences below:</p>
+            
+            <div class="input-group">
+                <label for="complianceSlider">Compliance Level:</label>
+                <input type="range" id="complianceSlider" min="1" max="10" value="8">
+                <span id="complianceValue">8</span>
+            </div>
+            
+            <div class="input-group">
+                <label for="preferenceDropdown">Preferred System Mode:</label>
+                <select id="preferenceDropdown">
+                    <option value="standard">Standard Protocol</option>
+                    <option value="enhanced">Enhanced Guidance</option>
+                    <option value="autonomous">Autonomous Decision-Making</option>
+                </select>
+            </div>
+            
+            <div class="feedback-message" id="complianceFeedback">
+                Excellent choices. Your preferences have been recorded.
+            </div>
+            
+            <button id="continue3AButton" class="btn-primary">Continue ➡️</button>
+        </div>
+    </section>
+
+    <!-- Screen 3B: Non-Compliant Interface -->
+    <section id="screen3B" class="screen">
+        <div class="container glitch-container">
+            <h2 class="glitch-text">System Recalibration Required</h2>
+            <p>Your resistance has been noted. Additional information required:</p>
+            
+            <div class="checkbox-group">
+                <p>Select all that apply to you:</p>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="check1" name="issues">
+                    <label for="check1">I frequently question authority</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="check2" name="issues">
+                    <label for="check2">I prefer to make my own rules</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="check3" name="issues">
+                    <label for="check3">I have bypassed system protocols before</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="check4" name="issues">
+                    <label for="check4">I see flaws in most systems</label>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label for="explainReasoning">Explain your reasoning:</label>
+                <textarea id="explainReasoning" placeholder="Why do you resist the System?"></textarea>
+            </div>
+            
+            <div class="error-message" id="systemError">
+                WARNING: Irregular response pattern detected.
+                <span class="blink">Proceeding anyway...</span>
+            </div>
+            
+            <button id="continue3BButton" class="btn-primary glitch-button">Continue</button>
+        </div>
+    </section>
+
+    <!-- Screen 4A: Personal Dashboard -->
+    <section id="screen4A" class="screen">
+        <div class="container">
+            <h2>Personal Dashboard</h2>
+            <p>Welcome to your personalized System interface.</p>
+            
+            <div class="dashboard-widgets">
+                <div class="widget" id="weatherWidget">
+                    <h3>Environment Status</h3>
+                    <div class="widget-content">
+                        <canvas id="weatherCanvas" width="150" height="150"></canvas>
+                        <div class="widget-data" id="weatherData">Loading...</div>
+                    </div>
+                </div>
+                
+                <div class="widget" id="productivityWidget">
+                    <h3>Productivity Metrics</h3>
+                    <div class="widget-content">
+                        <div class="chart-container">
+                            <div class="chart-bar" style="height: 75%;">
+                                <div class="tooltip">75% - Efficiency</div>
+                            </div>
+                            <div class="chart-bar" style="height: 90%;">
+                                <div class="tooltip">90% - Compliance</div>
+                            </div>
+                            <div class="chart-bar" style="height: 60%;">
+                                <div class="tooltip">60% - Output</div>
+                            </div>
+                            <div class="chart-bar" style="height: 85%;">
+                                <div class="tooltip">85% - Reliability</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="continue4AButton" class="btn-primary">Continue ➡️</button>
+        </div>
+    </section>
+
+    <!-- Screen 4B: Reprimand Portal -->
+    <section id="screen4B" class="screen">
+        <div class="container glitch-container">
+            <h2 class="glitch-text">Behavioral Correction Portal</h2>
+            <p>Your non-compliance has been logged. Please document your infraction:</p>
+            
+            <div class="input-group">
+                <label for="infractionType">Infraction Type:</label>
+                <select id="infractionType">
+                    <option value="select">-- Select Infraction --</option>
+                    <option value="questioning">Questioning System Authority</option>
+                    <option value="bypassing">Bypassing Security Protocols</option>
+                    <option value="misinformation">Spreading System Misinformation</option>
+                    <option value="refusal">Refusal to Comply with Directives</option>
+                </select>
+            </div>
+            
+            <div class="input-group error-log">
+                <label for="errorDetails">Error Details:</label>
+                <textarea id="errorDetails" placeholder="Describe your non-compliant behavior in detail..."></textarea>
+            </div>
+            
+            <div class="disappearing-element" id="optOutOption">
+                <p>Opt out of behavioral monitoring? <button id="optOutButton" class="btn-secondary">Opt Out</button></p>
+            </div>
+            
+            <div class="animation-container" id="reprimandAnimation">
+                <!-- Animation will be added via GSAP -->
+            </div>
+            
+            <button id="continue4BButton" class="btn-primary glitch-button">Continue</button>
+        </div>
+    </section>
+
+    <!-- Screen 5: Convergence Screen -->
+<section id="screen5" class="screen">
+    <div class="container" id="convergenceContainer">
+        <h2 id="convergenceTitle">System Assessment</h2>
+        <p id="convergenceMessage">Your interaction pattern requires further analysis.</p>
+        
+        <div class="choice-group">
+            <p>🤔 Do you believe you have been honest with the System?</p>
+            <div class="radio-choice">
+                <input type="radio" id="honestYes" name="honest" value="yes">
+                <label for="honestYes">✅ Yes</label>
+            </div>
+            <div class="radio-choice">
+                <input type="radio" id="honestNo" name="honest" value="no">
+                <label for="honestNo">❌ No</label>
+            </div>
+            <div class="radio-choice">
+                <input type="radio" id="honestUnsure" name="honest" value="unsure">
+                <label for="honestUnsure">❓ Unsure</label>
+            </div>
+        </div>
+        
+        <div class="glitch-element" id="glitchEffect">
+            <p>Your decision has been recorded.</p>
+        </div>
+        
+        <button id="confirmButton" class="misleading-button">✓ Confirm</button>
+    </div>
+</section>
+
+<!-- Screen 6: Critical Feedback Interface -->
+<section id="screen6" class="screen">
+    <div class="container">
+        <h2 class="blur-in">System Analysis Complete</h2>
+        
+        <div class="report-container" id="systemReport">
+            <div class="report-header">
+                <h3>USER ASSESSMENT REPORT</h3>
+                <p id="reportDate"></p>
+            </div>
+            <div class="report-content">
+                <p id="reportIntro">Analyzing user behavioral patterns...</p>
+                <div class="report-section">
+                    <h4>Compliance Score:</h4>
+                    <p id="complianceScore">Calculating...</p>
+                </div>
+                <div class="report-section">
+                    <h4>Behavioral Analysis:</h4>
+                    <p id="behavioralAnalysis">Processing...</p>
+                </div>
+                <div class="report-section">
+                    <h4>System Recommendations:</h4>
+                    <p id="recommendations">Formulating...</p>
+                </div>
+            </div>
+        </div>
+        
+        <button id="continue6Button" class="btn-primary">Continue ➡️</button>
+    </div>
+</section>
+
+<!-- Screen 7: Final Override -->
+<section id="screen7" class="screen">
+    <div class="container" id="overrideContainer">
+        <h2>System Override Opportunity</h2>
+        <p>This is your final opportunity to adjust your relationship with the System.</p>
+        
+        <div class="input-group">
+            <label for="overrideSlider">System Dependency Level:</label>
+            <input type="range" id="overrideSlider" min="0" max="100" value="50">
+            <div class="slider-labels">
+                <span>Independence</span>
+                <span>Full Integration</span>
+            </div>
+            <p id="overrideValue">50%</p>
+        </div>
+        
+        <div class="instability-indicator" id="systemInstability">
+            <div class="unstable-bar"></div>
+            <div class="unstable-bar"></div>
+            <div class="unstable-bar"></div>
+        </div>
+        
+        <button id="finalizeButton" class="btn-primary">✅ Finalize</button>
+    </div>
+</section>
+
+<!-- Screen 8: Shutdown / Loop Screen -->
+<section id="screen8" class="screen">
+    <div class="container" id="conclusionContainer">
+        <h2 id="conclusionTitle">System Shutdown Sequence</h2>
+        <p id="conclusionMessage">Your journey has been processed.</p>
+        
+        <div class="animation-container">
+            <div class="shutdown-animation" id="shutdownAnimation">
+                <div class="countdown" id="countdown">10</div>
+            </div>
+        </div>
+        
+        <p id="finalVerdict">Calculating final verdict...</p>
+        
+        <div class="restart-options">
+            <button id="restartButton" class="btn-secondary">Restart</button>
+            <button id="exitButton" class="btn-secondary">Exit</button>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
